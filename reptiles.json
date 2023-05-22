@@ -1,0 +1,23 @@
+[
+    {
+        "common_name": "Ball python",
+        "scientific_name": "Python regius",
+        "conservation_status": "Near threatened",
+        "native_habitat": "Forest, savanna, shrubland, grassland",
+        "fun_fact": "Ball pythons received their common name from their behavior of curling up into a ball when threatened."
+    },
+    {
+        "common_name": "Nile crocodile",
+        "scientific_name": "Crocodylus niloticus",
+        "conservation_status": "Near threatened",
+        "native_habitat": "freshwater habitats in Africa",
+        "fun_fact": "Nile crocodiles may easily die from overheating."
+    },
+    {
+        "common_name": "Poison dart frog",
+        "scientific_name": "poison arrow frog",
+        "conservation_status": "Near threatened",
+        "native_habitat": "native to tropical Central and South America",
+        "fun_fact": "use of their toxic secretions to poison the tips of blowdarts"
+    }
+]
