@@ -7,6 +7,9 @@ def create_app():
     app.config['SQLALCHEMY_DATABSE_URI'] = 'postgresql://postgres:Bratva@localhost:5432/zoo'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
+    from . import models
+    models.db.init_app(app)
+
     return app
 
 #database posql
