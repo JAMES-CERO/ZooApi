@@ -1,20 +1,25 @@
 from flask import Flask
+from flask_migrate import Migrate
+from . import models
 #factory
 
 def create_app():
     app = Flask(__name__)
 
-    app.config['SQLALCHEMY_DATABSE_URI'] = 'postgresql://postgres:Bratva@localhost:5432/ballpy'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:Bratva@localhost:5432/ballpy'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+    
 
-    from . import models
+    
     models.db.init_app(app)
+    migrate = Migrate(app, models.db)
 
-    from . import rept
-    app.register_blueprint(rept.bp)
+    from . import reptile
+    app.register_blueprint(reptile.bp)
+
+
 
     return app
 
-#database posql
 
 
