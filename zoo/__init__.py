@@ -10,6 +10,9 @@ def create_app():
     from . import models
     models.db.init_app(app)
 
+    from . import rept
+    app.register_blueprint(rept.bp)
+
     return app
 
 #database posql
